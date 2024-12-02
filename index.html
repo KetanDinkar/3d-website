@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Rose Design</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #070707; /* Light pink */
+        }
+        h1 {
+            position: absolute;
+            top: 10px;
+            text-align: center;
+            width: 100%;
+            font-family: 'Great Vibes', cursive; /* Example: Elegant script font */
+            font-size: 3rem;
+            color: #f30606;
+            margin: 0;
+        }
+
+        model-viewer {
+            width: 80%;
+            height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Title Line -->
+    <h1>I Hope This Rose Remains as Beautiful As Your Smile :)</h1>
+
+    <!-- 3D Model Viewer -->
+    <model-viewer 
+        src="rose.glb" 
+        alt="3D Rose" 
+        auto-rotate 
+        rotation-per-second="30deg" 
+        camera-controls>
+    </model-viewer>
+</body>
+</html>
